@@ -172,7 +172,7 @@ virksomhet som er avhengig av disse nettverkene!
 
 Hvorfor er disse systemene så komplekse? 
 
-<div align='center'><img src="model.png" width=700px></div>
+<div align='center'><img src="/img/model.png" width=700px></div>
 
 **Fysisk infrastruktur** inkluderer alt utstyr som er nødvendig for å realisere nettverk, og til
 sørge for lagring og behandling av tjenestene som leveres.
@@ -202,7 +202,7 @@ konsekvens kan utføres
 
 IKT systemene må beskyttes mot et vidt spekter av forskjellige trusler;
 
-<div align='center'><img src="trusler.png" width=700px></div>
+<div align='center'><img src="/img/trusler.png" width=700px></div>
 
 ******A network of networks******
 
@@ -216,7 +216,7 @@ Outsourcing: Noen skaffer en tjeneste fra en ekstern leverandør i stedet for å
 
 Andre samfunnsfunksjoner kan være så avhengige av disse funksjonene, at svikt her vil forplante seg til andre deler av samfunnet, dette vil igjen gå på bekostning av befolkningen. EKS: svikt i forsyningen av elektrisk energi kan føre til bortfall av vann og avløp, finansielle tjenester, kommunikssjon, etc…
 
-<div align='center'><img src="kritisk.png" width=700px></div>
+<div align='center'><img src="/img/kritisk.png" width=700px></div>
 
 **********************************Elektronisk kommunikasjon (”Ekom”)**********************************
 
@@ -231,7 +231,7 @@ I ekominfrastrukturen inngår;
 - tjenestenett: en kombinasjon av kjernenett og regionalnett:
 - drifts- og støttesystemer: IKT-systemer som overvåker og styrer ekomnett og tjenestenett
 
-<div align='center'><img src="ekom.png" width=700px></div>
+<div align='center'><img src="/img/ekom.png" width=700px></div>
 
 
 <a name="del6"></a>
@@ -315,7 +315,7 @@ Pålitelighet har tre hovedegenskaper: tilgjengelighet, pålitelighet(norsk har 
 - Vedlikeholdsvennlighet (mailtainability) er evnen et system har til å bli gjenopprettet til en tilstand der det kan levere den nødvendige tjenesten.
     - modeller blir brukt for å beskrive den nødvendige tiden for å returnere et ureparerlig system til service
 
-<div align='center'><img src="dependability.png" width=700px></div>
+<div align='center'><img src="/img/dependability.png" width=700px></div>
 
 **************Sikkerhet**************
 
@@ -347,7 +347,7 @@ Høy tilgjengelighet/pålitelighet er ikke mye verdt hvis ytelsen er treg. Et sy
 
 ******Qos (Quality of Service)******
 
-<div align='center'><img src="QoS.png" width=700px></div>
+<div align='center'><img src="/img/QoS.png" width=700px></div>
 Def som “et sett med kvalitetskrav på den kollektive oppførselen til ett eller flere objekter”. 
 
 Dig.kom.; QoS beskriver ytelsen til pakkesvitsjede nettverk. 
@@ -363,7 +363,7 @@ Funksjonelle krav spesifiserer noe et system må gjøre, ikke-funksjonelle spesi
 
 For å lage et sikker og robust IKT system må vi ta hensyn til et vidt spekter av trusler som kan påvirke systemet og dets leveranse. Når man skal analysere et system, burde man ta for seg alle mulige trusler. Dette gjelder både tilfeldige feil og bevisste angrep.
 
-<div align='center'><img src="trusler.png" width=700px></div>
+<div align='center'><img src="/img/trusler.png" width=700px></div>
 
 Innenfor pålitelighet snakker man ofte om faults, errors og failures.
 
@@ -381,8 +381,8 @@ Tilfeldige feil er vanligvis forbundet med maskinvarekomponenter. Siden alle fys
 Deteksjon av feil gjøres vanligvis ved å kontrollere programvare.
 Systemer kan ofte konstrueres for å tolerere eller til og med rette feil.
 
-<div align='center'><img src="ex1.png" width=700px></div>
-<div align='center'><img src="ex2.png" width=700px></div>
+<div align='center'><img src="/img/ex1.png" width=700px></div>
+<div align='center'><img src="/img/ex2.png" width=700px></div>
 
 **Prosessen med en trussel-sårbarhet-hendelse**
 
@@ -433,8 +433,8 @@ I motsetning til feil x 3-patologien er det denne gangen et menneske involvert, 
 
 Svakheter i et system som tillater trusler å forårsake hendelser
 
-<div align='center'><img src="vulnerabilities1.png" width=700px></div>¨
-<div align='center'><img src="vulnerabilities2.png" width=700px></div>
+<div align='center'><img src="/img/vulnerabilities1.png" width=700px></div>¨
+<div align='center'><img src="/img/vulnerabilities2.png" width=700px></div>
 
 ********************************Svakheter i den norske IKT infrastrukturen********************************
 
@@ -443,4 +443,4 @@ Svakheter i et system som tillater trusler å forårsake hendelser
 - Ikke dimensjonert for “peaks” i trafikken
 - Mangel på redundans
 
-<div align='center'><img src="WHYYY.png" width=700px></div>
+<div align='center'><img src="/img/WHYYY.png" width=700px></div>
