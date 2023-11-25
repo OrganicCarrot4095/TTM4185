@@ -467,3 +467,4 @@ Svakheter i et system som tillater trusler å forårsake hendelser
 - Risiko:
     - Avhenger av verdien til systemet of sannsynligheten for utnyttelse
       
+<div align='center'><img src="/img/CVSS.png" width=700px></div>
