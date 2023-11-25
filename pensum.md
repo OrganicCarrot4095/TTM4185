@@ -4,7 +4,7 @@
 3. [*NETTVEKSTOPOLOGIER*](#del3)
 4. [*KOMPLEKSE IKT-SYSTEMER (igjen??)*](#del4)
 5. [*IKT-SYSTEM OG KRITISK INFRASTRUKTUR*](#del5)
-7. [*Inndata/Utgongssystem*](#del6)
+7. [*TAKSONOMI*](#del6)
 8. [*Parallelle datamaskinar*](#del7)
 9. [*Operativsystem og maskinvaregrensesnitt*](#del8)
 10. [*Datamaskinnettverk*](#del9)
@@ -232,3 +232,215 @@ I ekominfrastrukturen inngår;
 - drifts- og støttesystemer: IKT-systemer som overvåker og styrer ekomnett og tjenestenett
 
 <div align='center'><img src="ekom.png" width=700px></div>
+
+
+<a name="del6"></a>
+# Taksonomi
+
+Når hele nettverket fungerer, hva mer trenger vi?
+
+Det kan være lurt å tenke på:
+
+- sikkerhet ⭐️
+- personvern ⭐️
+- funksjonalitet
+- pålitelighet ⭐️
+- vedlikehold
+- brukervennlighet
+- trygghet ⭐️
+- ytelse ⭐️
+- overlevelsesevne
+- motstandsdyktighet
+- etc
+
+* ⭐️ de fem kjennetegnene på et sikkert og robust system
+
+**********************************What is security?********************************** 
+
+Betyr datasikkerhet, informasjonssikkerhet, IKT sykkerhet, cybersikkerhet, nettverkssikkerhet, computersikkerhet og IT-sikkerhet det samme? Nei
+
+Vi har noen fundamentale sikkerhetsattributter; 
+
+- Confidentiality: bare autoriserte personer/systemer kan se sensitiv eller gradert `informasjon`
+- Integrity: forsikrer oss om at `informasjon (og tjenester)` ikke har blitt tuklet med
+- Availability: nettverket skal være lett tilgjengelig for brukerne
+- (Authenticity: handler om å få bekreftet at kilden er den du er ute etter)
+- (Non-repudation: man kan ikke angre for det man har sendt)
+- (Accountability: skal kunne spore alt tilbake til kilden)
+
+EKSEMPEL: Skype-samtale
+
+- Confidentiality: det skal ikke være mulig for utenforstående å lytte på samtalen
+- Integrity: meldinger som blir sendt skal ikke tukles med
+- Availability/Authenticity: søkefunksjonen kan kun brukes av registerte brukere
+- Authenticity: brukere kan kun bli kontaktet av folk i kontaktlisten dems
+- Non-repudation: brukere kan ikke slette meldinger de har sendt
+
+*******Need to know vs need to share*******
+
+Sikkerhet er en kompleks oppgave. Kravene er ofte rett frem, men måten å implementere de er vanskelige. 
+
+************Personvern************
+
+Hva er personvern? I denne sammenhengen innebærer personvern at individer/grupper selv har retten til å bestemme når, hvordan og i hvor stor grad informasjon som omhandler dem, blir kommunisert til andre. Det handler altså om å kunne kontrollere hva som blir gjort med dine personopplysninger. (***************************informasjon som kan brukes for å identifisere en person i en gruppe med mennesker).*************************** 
+
+Vi har tre aktører innenfor dette:
+
+- den registrerte
+- behandlingsansvarlig
+- databehandler
+
+**************************Sikkerhet er ofte avhengig av en hemmelighet**************************
+
+************************Sikkerhet vs brukervennlighet************************
+
+Brukervennlighet er viktig, ellers vil brukerene finne snarveier for å unngå de tekniske problemene de opplever i forbindelse med sikkerheten. “PGP”
+
+************************Sikkerhet vs personvern************************
+
+Personvern handler om å beskytte informasjon om enkeltindivider. Sikkerhet handler om å beskytte all data, informasjon og generelt alle viktige komponenter i et IKT system.
+
+************************Pålitelighet/Driftssikkerhet************************
+
+Påliteligheten til et system er viktig slik at man med rette kan stole på tjenesten det leverer. 
+
+Pålitelighet har tre hovedegenskaper: tilgjengelighet, pålitelighet(norsk har dårlig ordforråd) og vedlikeholdsvennlighet.
+
+- Tilgjengelighet (availability) er evnen til å tilby tjenester på et gitt tidspunkt eller innenfor et gitt tidsintervall.
+    - asymptotisk tilgjengelighet: sannsynligheten for at et system fungerer på et tilfeldig gitt tidspunkt
+    - instantaneous tilgj.: sannsynligheten for at et system jobber på et gitt tidspunkt
+    - interval tilgj.: gjennomsnittstilgjengeligheten over et gitt tidsintervall
+- Pålitelighet (reliability) er evnen til å tilby uforstyrrede tjenester.
+    - tiden til første gong et system svikter eller tiden til feil generelt
+- Vedlikeholdsvennlighet (mailtainability) er evnen et system har til å bli gjenopprettet til en tilstand der det kan levere den nødvendige tjenesten.
+    - modeller blir brukt for å beskrive den nødvendige tiden for å returnere et ureparerlig system til service
+
+<div align='center'><img src="dependability.png" width=700px></div>
+
+**************Sikkerhet**************
+
+- et systems manglende evne til å ha en uønsket effekt på sitt mijlø
+- å unngå katastrofale feil
+
+Sikkerhet vs pålitelighet: et pålitelig system vil neppe slutte å fungere, mens et trygt system sannsynligvis ikkje forårsaker katastrofale feil
+
+Safety vs security:
+
+- safety: beskyttelse mot utilsiktede hendelser
+- security: beskyttelse mot bevisste hendelser
+- safety + security = safe
+
+******************Is it safe to fly?******************
+
+************Ytelse************
+
+Kan defineres som et systems evne til å tilby de ressursene som trengs for å levere dens tjenester. Ytelsen avhenger av mengden ressurser i systemet og deres utnyttelse.
+
+- kapasitet: def. som den maksimale lasten et gitt system klarer å håndtere pr tidsenhet
+- gjennomstrømning: den delen av kapasiteten som blir brukt av brukerene
+- forsinkelse: tiden det tar å få fullføre en tjeneste
+- andre ting som: pakketap, tilstopping, servicetid, etc…
+
+Pålitelighet vs ytelse
+
+Høy tilgjengelighet/pålitelighet er ikke mye verdt hvis ytelsen er treg. Et system der feil aldri oppstår, men uten tilstrekkelige ressurser til å oppfylle ytelseskravene, anses ikke å være i fungerende tilstand.
+
+******Qos (Quality of Service)******
+
+<div align='center'><img src="QoS.png" width=700px></div>
+Def som “et sett med kvalitetskrav på den kollektive oppførselen til ett eller flere objekter”. 
+
+Dig.kom.; QoS beskriver ytelsen til pakkesvitsjede nettverk. 
+
+Internett og datastrømmning: QoS beskriver ytelsen til applikajsoner
+
+************************************Funksjonelle vs ikke-funksjonelle krav************************************
+
+Funksjonelle krav spesifiserer noe et system må gjøre, ikke-funksjonelle spesifiserer hvordan det burde oppføre seg
+
+
+# Trusler
+
+For å lage et sikker og robust IKT system må vi ta hensyn til et vidt spekter av trusler som kan påvirke systemet og dets leveranse. Når man skal analysere et system, burde man ta for seg alle mulige trusler. Dette gjelder både tilfeldige feil og bevisste angrep.
+
+<div align='center'><img src="trusler.png" width=700px></div>
+
+Innenfor pålitelighet snakker man ofte om faults, errors og failures.
+
+- En “fault” er en defekt i et system;
+    
+    *programvarefeil, tilfeldige maskinvarefeil, minnebiter som sitter fast, utelatelsesfeil i    meldinger under dataoverføring*
+    
+- En “error” er et avvik fra den nødvendige driften av systemet. En “fault” kan føre til en “error”, som da vil gjøre “fault”en tydelig. En “fault” kan ligge i dvale/være passiv lenge før den viser seg som en “feil”. Når ein “fault” lager en “error” sies den å være aktiv.;
+    
+    *en software bug “fault” vil ikke være synlig for subrutinen der feilen hører hjemme blir kalt.* 
+    
+- En “failure” oppstår når systemet ikke klarer å utføre den nødvendige funksjonen, dvs levere dens tjenester.
+
+Tilfeldige feil er vanligvis forbundet med maskinvarekomponenter. Siden alle fysiske komponenter er utsatt for feil, vil enhver IKT-infrastruktur være gjenstand for tilfeldige feil.
+Deteksjon av feil gjøres vanligvis ved å kontrollere programvare.
+Systemer kan ofte konstrueres for å tolerere eller til og med rette feil.
+
+<div align='center'><img src="ex1.png" width=700px></div>
+<div align='center'><img src="ex2.png" width=700px></div>
+
+**Prosessen med en trussel-sårbarhet-hendelse**
+
+Fra et sikkerhetsperspektiv er det vanlig å snakke om trusler, sårbarheter og hendelser.
+I motsetning til feil x 3-patologien er det denne gangen et menneske involvert, som er årsaken til trusselen. Trusselen skjer derfor ikke «bare»; det ligger i mange tilfeller en klar intensjon bak.
+
+*et virus (trussel) kan infisere en uopprettet datamaskin (sårbarhet), som da vil være ubrukelig for eieren (hendelsen).*
+
+******Tilfeldige feil - “Systemsvikt”******
+
+- Komponenter bryter sammen, ofte som følge av overbelastning
+    - Kortslutning i elektronik
+    - Elektronikk tar fyr
+    - Harddisker slutter å fungere
+    - Logiske feil i programkode
+    - Produksjonsfeil i hardware
+- Kan åpne opp for andre typer trusler
+
+********************************************Utilsiktede feil - “Menneskelige feil”********************************************
+
+- Mennesker gjør feil, selv med de beste intensjoner
+    - Dokument sendt til feil mottaker
+    - Uheldig sletting av filer
+    - Inntasting av feil data i et system
+    - Feilkonfig. av tjenester og systemer
+        - Systemoppgraderinger feiler
+    - Mister minnepinner
+    - Søler kaffe på serveren
+    - Fiberkabler blir gravd over
+
+********************************Bevisste angrep********************************
+
+- Skadevare
+- Man-in-the-middle: angrep hvor angriperen skjult releer og potensielt endrer kommunikasjonen mellom to parter som tror de kommuniserer direkte
+- Tjuvlytting
+- Root kits
+- Injection attacks
+- Buffer overflow: angrep som utnytter sårbar programvare som tillater skriving utenfor allokert minne på datamaskinen (”Smashing the stach for fun and profit”)
+- Passordangrep
+- DoS
+- Social engineering (Phishing): bruker menneske for å få informasjon om en organisasjon ellers dens systemer
+- Tyveri
+- Spionasje
+- Utpressing
+- Sabotasje, vandalisme, terrorisme
+
+************Sårbarheter************
+
+Svakheter i et system som tillater trusler å forårsake hendelser
+
+<div align='center'><img src="vulnerabilities1.png" width=700px></div>¨
+<div align='center'><img src="vulnerabilities2.png" width=700px></div>
+
+********************************Svakheter i den norske IKT infrastrukturen********************************
+
+- Mange aktører
+- Mer sentralitet
+- Ikke dimensjonert for “peaks” i trafikken
+- Mangel på redundans
+
+<div align='center'><img src="WHYYY.png" width=700px></div>
