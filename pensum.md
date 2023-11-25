@@ -1,3 +1,18 @@
+### Oversikt over struktur
+1. [*KOMPLEKSE IKT-SYSTEMER*](#del1)
+2. [*OPPSUMMERING AV NETTVERKSPROTOKOLLER OG OSI-MODELLENk*](#del2)
+3. [*NETTVEKSTOPOLOGIER*](#del3)
+4. [*KOMPLEKSE IKT-SYSTEMER (igjen??)*](#del4)
+5. [*IKT-SYSTEM OG KRITISK INFRASTRUKTUR*](#del5)
+7. [*Inndata/Utgongssystem*](#del6)
+8. [*Parallelle datamaskinar*](#del7)
+9. [*Operativsystem og maskinvaregrensesnitt*](#del8)
+10. [*Datamaskinnettverk*](#del9)
+11. [*Framtidige trender*](#del10)
+12. [*Oppsummering*](#oppsummering)
+13. [*Alt man trenger å vite...*](#christianskokebok)
+
+<a name="del1"></a>
 # Komplekse IKT systemer
 
 **IKT systemer:**
@@ -38,7 +53,7 @@ Flere kombinasjoner:
 ****************Hvilke kommunikasjonstjenester bruker du? Hvordan vil du klassifiserer/beskrive de ulike komboene?****************
 
 
-
+<a name="del2"></a>
 # Oppsummering av nettverksprotokoller og OSI modellen
 
 **Packets og routing**
@@ -77,6 +92,7 @@ De forskjellige pakkene trenger ikke å ta samme vei for å komme frem til måle
 - Firmware er programvaren i minnet til maskinvaren
 
 
+<a name="del3"></a>
 # Nettverkstopologier
 
 **********************************************************Peers connected to a network:**********************************************************
@@ -104,6 +120,8 @@ Stikkord; noder(peers) , Bacon-tall, sentralitet, grafer,
 
 
 
+<a name="del4"></a>
+# Komplekse IKT-system
 Som dere alle vet, er ikke telekommunikasjon (utveksling av informasjon over avstand).
 mulig uten mye teknisk, fysisk utstyr. Dette er utstyr med maskinvare og programvare, med komplisert logikk, og med (strenge) kapasitetsbegrensninger, funksjonelle/funksjonsbegrensninger og feil. Det grunnleggende inkluderer teknisk utstyr, som sluttbrukerutstyr/terminaler, slik at informasjon kan kodes/dekodes til/fra datarepresentasjon, som må ha et format at det kan overføres elektronisk (elektrisk eller optisk) mellom slike
 teknisk utstyr over lange avstander (utenfor synsvidde). 
@@ -154,7 +172,7 @@ virksomhet som er avhengig av disse nettverkene!
 
 Hvorfor er disse systemene så komplekse? 
 
-<img src="model.png">
+<img src="model.png" align='center' width=400px>
 
 **Fysisk infrastruktur** inkluderer alt utstyr som er nødvendig for å realisere nettverk, og til
 sørge for lagring og behandling av tjenestene som leveres.
@@ -184,7 +202,7 @@ konsekvens kan utføres
 
 IKT systemene må beskyttes mot et vidt spekter av forskjellige trusler;
 
-<img src="trusler.png">
+<img src="trusler.png" align='center' width=400px>
 
 ******A network of networks******
 
@@ -192,12 +210,13 @@ koordinere byggingen, designet, styringen til nettverket ende til ende, det er i
 
 Outsourcing: Noen skaffer en tjeneste fra en ekstern leverandør i stedet for å implementere denne selv. En tjeneste leveres alltid av enn provider, og brukes av en user. SLA er en avtale mellom provider og user.
 
-
+<a name="del5"></a>
+# IKT-system og kritisk infrastruktur
 *****✨Kritisk infrastruktur er de anlegg og systemer som helt nødvendige for å opprettholde samfunnets kritiske funksjoner som igjen dekker samfunnets grunnleggende behov og befolkningens trygghetsfølelse✨ -***** Direktoratet for samfunnssikkerhet og beredskap
 
 Andre samfunnsfunksjoner kan være så avhengige av disse funksjonene, at svikt her vil forplante seg til andre deler av samfunnet, dette vil igjen gå på bekostning av befolkningen. EKS: svikt i forsyningen av elektrisk energi kan føre til bortfall av vann og avløp, finansielle tjenester, kommunikssjon, etc…
 
-<img src="kritisk.png">
+<img src="kritisk.png" align='center' width=400px>
 
 **********************************Elektronisk kommunikasjon (”Ekom”)**********************************
 
@@ -205,6 +224,11 @@ defineres som “kommunikasjon ved bruk av system for signaltransport som muligg
 
 Det eksisterer flere uavhengige ekomnett, som så og si er integrert med hverandre. 
 
-I ekominfrastrukturen inngår; kjernenett, regionalnett, aksessnett, tjenestenett og drifts- og støttesystemer.
+I ekominfrastrukturen inngår; 
+- kjernenett: løser trafikkbehoved mellom større byer og regioner 
+- regionalnett: løser trafikkbehovet innad i større byer og regioner
+- aksessnett: knytter utstyret hos brukeren til regionalnettet
+- tjenestenett: en kombinasjon av kjernenett og regionalnett:
+- drifts- og støttesystemer: IKT-systemer som overvåker og styrer ekomnett og tjenestenett
 
 <img src="ekom.png">
