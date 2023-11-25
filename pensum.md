@@ -172,7 +172,7 @@ virksomhet som er avhengig av disse nettverkene!
 
 Hvorfor er disse systemene så komplekse? 
 
-<img src="model.png" align='center' width=400px>
+<div align='center'><img src="model.png" width=700px></div>
 
 **Fysisk infrastruktur** inkluderer alt utstyr som er nødvendig for å realisere nettverk, og til
 sørge for lagring og behandling av tjenestene som leveres.
@@ -202,7 +202,7 @@ konsekvens kan utføres
 
 IKT systemene må beskyttes mot et vidt spekter av forskjellige trusler;
 
-<img src="trusler.png" align='center' width=400px>
+<div align='center'><img src="trusler.png" width=700px></div>
 
 ******A network of networks******
 
@@ -216,7 +216,7 @@ Outsourcing: Noen skaffer en tjeneste fra en ekstern leverandør i stedet for å
 
 Andre samfunnsfunksjoner kan være så avhengige av disse funksjonene, at svikt her vil forplante seg til andre deler av samfunnet, dette vil igjen gå på bekostning av befolkningen. EKS: svikt i forsyningen av elektrisk energi kan føre til bortfall av vann og avløp, finansielle tjenester, kommunikssjon, etc…
 
-<img src="kritisk.png" align='center' width=400px>
+<div align='center'><img src="kritisk.png" width=700px></div>
 
 **********************************Elektronisk kommunikasjon (”Ekom”)**********************************
 
@@ -231,4 +231,4 @@ I ekominfrastrukturen inngår;
 - tjenestenett: en kombinasjon av kjernenett og regionalnett:
 - drifts- og støttesystemer: IKT-systemer som overvåker og styrer ekomnett og tjenestenett
 
-<img src="ekom.png">
+<div align='center'><img src="ekom.png" width=700px></div>
