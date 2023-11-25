@@ -7,7 +7,7 @@
 7. [*TAKSONOMI*](#del6)
 8. [*TRUSLER*](#del7)
 9. [*TRUSLER OG TRENDER (GF)*](#del8)
-10. [*Operativsystem og maskinvaregrensesnitt*](#del9)
+10. [*MARITIM DIGITAL KOMMUNIKASJON*](#del9)
 11. [*Datamaskinnettverk*](#del10)
 12. [*Framtidige trender*](#del11)
 
@@ -450,13 +450,13 @@ Svakheter i et system som tillater trusler å forårsake hendelser
 <a name="del8"></a>
 # Trusler og trender
 
-********************************************Sårbarheter********************************************
+**Sårbarheter**
 
 "Vulnerabilities are flaws in a computer system that weaken the overall security of the device/system. Vulnerabilities can be weaknesses in either the hardware itself, or the software that runs on the hardware. Vulnerabilities can be exploited by a threat actor, such as an attacker, to cross privilege boundaries (i.e. perform unauthorized actions) within a computer system. To exploit a vulnerability, an attacker must have at least one applicable tool or technique that can connect to a system weakness. In this frame, vulnerabilities are also known as the attack surface." -_✨Wikipedia✨_
 
-**Alvorlighetsgrad** 
+****************************Alvorlighetsgrad*****************************
 
-- Forskjell på teknisk alvorlighetsgrad og risiko
+Forskjell på teknisk alvorlighetsgrad og risiko
 - Teknisk alvorlighetsgrad:
     - Hva oppnår man med sårbarheten
     - Hva skal til for å utnytte sårbarheten
@@ -468,3 +468,68 @@ Svakheter i et system som tillater trusler å forårsake hendelser
     - Avhenger av verdien til systemet of sannsynligheten for utnyttelse
       
 <div align='center'><img src="/img/CVSS.png" width=700px></div>
+
+
+Når en sårbarhet er kjent er den lett å finne, derfor er det viktig å oppdatere. En ukjent sårbarhet er sårbarheter i systemet man enda ikke vet om, men dette betyr ikke at de ikke er funnet. Disse er svært vanskelig å beskytte seg mot.
+
+
+**Typer angrep**
+
+Målrettet: 
+- Vanskelig
+    - Dersom man har et oppdatert og robust system er det vanskelig å hacke seg inn fra internettet.
+    - 
+- Feilkonfigureringer eller svakheter
+    - Avhengig av feilkonfig. eller svakheter i løsninger som er eksponert mot internet
+    - Angrep mot påloggingssystemer er blandt det mest effektive
+
+- Zero-day*:
+    - Svært effektivt å bruke, men veldig vanskelig å få tak i
+        - Effektiv -> Overraskelsesmoment, potensielt store skader og potensielt store skader
+        - Vanskelig å Oppdage og Få Tak I -> Kompleksitet i oppdagelse, skjeldne og verdifulle, etiske og juridiske begrensninger, og kort levetid etter offentliggjøring
+
+  > **Zero-day**: Når en ukjent sårbarhet endelig blir oppdaget og utnyttet av en angriper, kalles det en "zero-day" sårbarhet. Dette betyr at det ikke finnes noen kjent løsning eller sikkerhetsoppdatering for å rette opp problemet, og det kan føre til alvorlige sikkerhetsbrudd.
+
+
+Opportunistisk:
+- Enkle mål som er sårbare
+    - Enkle angrep mot systemer som allerede har sårbarheter
+
+- Skannere
+    - Det finnes mange automatiske skannere som kontinuerlig skanner systemer på internett etter svakheter
+
+- Enkle angrep etter kompromittering
+    - Ofte enkle og automatiske angrep etter kompromittering, eks:
+        - Kryptering av innhold
+        - "Hacked by" defacement
+        - Endring av reklame
+        - Referanser til andre sider for å øke Google score
+        - Bitcoing mining
+     
+
+**Trusselaktører**
+- Innsidere -> Fordel
+- Thrill seekers -> Omdømme/nysgjerrighet
+- Hacktivists -> Ideologi
+- Cyberkriminelle -> Vinning
+- Nation State -> Politisk
+
+<a name="del9"></a>
+# Maritim digital kommunikasjon
+Shipping blir mer og mer digitalisert
+- Mer integrasjon om bord
+- Mer datautveksling
+- Mer trafikkstyring fra land
+- Mot ubemannede skip
+
+....og mer følsomt for angrep
+- pirater
+- smuggling
+- svindel
+- hackere
+- spionasje
+
+**Hvordan ser skipets IT-system ut?**
+<div align='center'><img src="/img/shipIT.png" width=700px></div>
+
+
