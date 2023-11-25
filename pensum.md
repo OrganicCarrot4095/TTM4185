@@ -5,12 +5,12 @@
 4. [*KOMPLEKSE IKT-SYSTEMER (igjen??)*](#del4)
 5. [*IKT-SYSTEM OG KRITISK INFRASTRUKTUR*](#del5)
 7. [*TAKSONOMI*](#del6)
-8. [*Parallelle datamaskinar*](#del7)
-9. [*Operativsystem og maskinvaregrensesnitt*](#del8)
-10. [*Datamaskinnettverk*](#del9)
-11. [*Framtidige trender*](#del10)
-12. [*Oppsummering*](#oppsummering)
-13. [*Alt man trenger å vite...*](#christianskokebok)
+8. [*TRUSLER*](#del7)
+9. [*TRUSLER OG TRENDER (GF)*](#del8)
+10. [*Operativsystem og maskinvaregrensesnitt*](#del9)
+11. [*Datamaskinnettverk*](#del10)
+12. [*Framtidige trender*](#del11)
+
 
 <a name="del1"></a>
 # Komplekse IKT systemer
@@ -358,7 +358,7 @@ Internett og datastrømmning: QoS beskriver ytelsen til applikajsoner
 
 Funksjonelle krav spesifiserer noe et system må gjøre, ikke-funksjonelle spesifiserer hvordan det burde oppføre seg
 
-
+<a name="del7"></a>
 # Trusler
 
 For å lage et sikker og robust IKT system må vi ta hensyn til et vidt spekter av trusler som kan påvirke systemet og dets leveranse. Når man skal analysere et system, burde man ta for seg alle mulige trusler. Dette gjelder både tilfeldige feil og bevisste angrep.
@@ -444,3 +444,26 @@ Svakheter i et system som tillater trusler å forårsake hendelser
 - Mangel på redundans
 
 <div align='center'><img src="/img/WHYYY.png" width=700px></div>
+
+
+
+<a name="del8"></a>
+# Trusler og trender
+
+********************************************Sårbarheter********************************************
+
+"Vulnerabilities are flaws in a computer system that weaken the overall security of the device/system. Vulnerabilities can be weaknesses in either the hardware itself, or the software that runs on the hardware. Vulnerabilities can be exploited by a threat actor, such as an attacker, to cross privilege boundaries (i.e. perform unauthorized actions) within a computer system. To exploit a vulnerability, an attacker must have at least one applicable tool or technique that can connect to a system weakness. In this frame, vulnerabilities are also known as the attack surface." -_✨Wikipedia✨_
+
+**Alvorlighetsgrad** 
+
+- Forskjell på teknisk alvorlighetsgrad og risiko
+- Teknisk alvorlighetsgrad:
+    - Hva oppnår man med sårbarheten
+    - Hva skal til for å utnytte sårbarheten
+    - Standardiserte verdier for alvorlighetsgradd
+        - CVSS
+              - Åpen standard, brukt av mange
+              - 0 - 10
+- Risiko:
+    - Avhenger av verdien til systemet of sannsynligheten for utnyttelse
+      
