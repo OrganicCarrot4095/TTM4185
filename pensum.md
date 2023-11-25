@@ -1,15 +1,14 @@
-### Oversikt over struktur
+### Where 2 start
 1. [*KOMPLEKSE IKT-SYSTEMER*](#del1)
 2. [*OPPSUMMERING AV NETTVERKSPROTOKOLLER OG OSI-MODELLENk*](#del2)
 3. [*NETTVEKSTOPOLOGIER*](#del3)
 4. [*KOMPLEKSE IKT-SYSTEMER (igjen??)*](#del4)
 5. [*IKT-SYSTEM OG KRITISK INFRASTRUKTUR*](#del5)
-7. [*TAKSONOMI*](#del6)
-8. [*TRUSLER*](#del7)
-9. [*TRUSLER OG TRENDER (GF)*](#del8)
-10. [*MARITIM DIGITAL KOMMUNIKASJON*](#del9)
-11. [*Datamaskinnettverk*](#del10)
-12. [*Framtidige trender*](#del11)
+6. [*TAKSONOMI*](#del6)
+7. [*TRUSLER*](#del7)
+8. [*TRUSLER OG TRENDER (GF)*](#del8)
+9. [*MARITIM DIGITAL KOMMUNIKASJON*](#del9)
+
 
 
 <a name="del1"></a>
@@ -26,7 +25,7 @@
 
 *Vital information, personal information, strategic information, high-cost information.*
 
-*Hvilken informasjon er viktig for deg?* 
+> *Hvilken informasjon er viktig for deg?* 
 
 **Tenester:** 
 
@@ -34,11 +33,11 @@ I dag bruker alle organisasjoner digitale tenester. Dette er en viktig del av et
 
 *Tjenester har ulike “formål”: Nødvendig pga juridiske krav, nødvendig for å beskytte målet og gjennomførelsen til organisasjonen. Tjenester som inneholder hemmelig info.* 
 
-*Hvilke tjenester er viktige for deg?* 
+> *Hvilke tjenester er viktige for deg?* 
 
 Menneskelige presentasjoner, tekniske systemer og organisatoriske forhold er alle relevante aspekter av et sikkert og robust IKT system.
 
-*But whyyyyyy?????*
+> *But whyyyyyy?????*
 
 Storytime: 
 
@@ -50,7 +49,7 @@ Flere kombinasjoner:
 - H2M
 - M2M
 
-****************Hvilke kommunikasjonstjenester bruker du? Hvordan vil du klassifiserer/beskrive de ulike komboene?****************
+> ****************Hvilke kommunikasjonstjenester bruker du? Hvordan vil du klassifiserer/beskrive de ulike komboene?****************
 
 
 <a name="del2"></a>
@@ -64,7 +63,7 @@ Når du sender eller mottar informasjon på internett, sendes det “pakker” m
 
 De forskjellige pakkene trenger ikke å ta samme vei for å komme frem til målet. Det er ikke sikkert at pakkene kommer frem i samme rekkefølge som de ble sendt. Dersom en ruter “går ned”, kan man alltids sende pakkene en annen vei. Dette gjør at Internett er en svært robust kommunikasjonsinfrastruktur.
 
-**********************************Hva er forskjellen mellom denne typen nettverk og et klassisk telefoni-nettverk fra “gamle dager”?********************************** 
+> **********************Hva er forskjellen mellom denne typen nettverk og et klassisk telefoni-nettverk fra “gamle dager”?********************** 
 
 ************************Protokoller************************
 
@@ -170,7 +169,7 @@ virksomhet som er avhengig av disse nettverkene!
 
 **********************A model of ICT systems**********************
 
-Hvorfor er disse systemene så komplekse? 
+> Hvorfor er disse systemene så komplekse? 
 
 <div align='center'><img src="/img/model.png" width=700px></div>
 
@@ -253,7 +252,7 @@ Det kan være lurt å tenke på:
 - motstandsdyktighet
 - etc
 
-* ⭐️ de fem kjennetegnene på et sikkert og robust system
+> **⭐️de fem kjennetegnene på et sikkert og robust system**
 
 **********************************What is security?********************************** 
 
@@ -330,7 +329,7 @@ Safety vs security:
 - security: beskyttelse mot bevisste hendelser
 - safety + security = safe
 
-******************Is it safe to fly?******************
+> ******************Is it safe to fly?******************
 
 ************Ytelse************
 
@@ -532,4 +531,19 @@ Shipping blir mer og mer digitalisert
 **Hvordan ser skipets IT-system ut?**
 <div align='center'><img src="/img/shipIT.png" width=700px></div>
 
+**Angrep på OT-sys** har potensielt store konsekvenser, feks. kollisjon eller grunnstøting. Vanligvis meget komplisert.
 
+**Angrep på viktige IT-systemer** kan hovedsaklig ha store konsekvenser for økonomi eller rykte. Det kan være både tilfeldige og planlagte angrep.  
+
+**Angrep på kommunikasjon** kan ramme OT- og IT-systemer. Da har man en større angrepsflate. Dette er antagelig "enklere" enn direkte OT-angrep.
+
+> Operasjonell teknologi (OT) refererer til maskinvare og programvare som brukes til å kontrollere og overvåke fysiske enheter, prosesser og hendelser i industrielle miljøer. OT er en sentral del av mange industrier, spesielt de som involverer produksjon, energiproduksjon, transport og andre former for kritisk infrastruktur.
+
+**Litt terminologi**
+• VHF: Very High Frequency – Radio-kanaler på 25 kHz hver som brukes til talekommunikasjon eller AIS. Kanalene er i området 156 til 162 MHz.
+• AIS: Automatic Identification System – Automatisk sending av navigasjonsinformasjon fra alle større skip (posisjon, kurs, fart ...).
+• ASM: Application Specific Messages – Mulighet til å sende generelle datameldinger i AIS-kanalene og to nye kanaler i VDES.
+• VDES: VHF Data Exchange System – Nytt system av kanaler for digital VHF.
+• VDE: VHF Data Exchange – Nye 100 kHz VHF kanaler (hver er fire gamle) for digitale meldinger.
+
+**Skip kommuniserer med mange parter**
