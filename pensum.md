@@ -948,8 +948,10 @@ Risikohåndtering brukes fordi det ikke er mulig å lage helt feilfrie systemer.
             - Noder som forbinder subgrafer anerkjennes ikke som viktige
     - **Degree centrality**
         - Tegn de korteste banene for alle nodeparene: Hvor mange av disse går gjennom $`v_i`$
-        - $`\sum_{s<t \text{&} (s, t ≠ i)}{\frac{n_{s,t}^{i}}{n_{s,t}}}`$
-
+        - $`\sum_{s < t \& (s, t ≠ i)}{\frac{n_{s,t}^{i}}{n_{s,t}}}`$
+            - $`n_{s,t}^{i}`$ er antall korteste veier mellom $`v_s`$ og $`v_t`$ som går gjennom $`v_i`$
+            - $`n_{s,t}`$ er antall korteste veier mellom $`v_s`$ og $`v_t`$
+        - Merk: Et nodepar kan ha flere korteste veier
 
 
 
