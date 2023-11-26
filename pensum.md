@@ -920,6 +920,7 @@ Risikohåndtering brukes fordi det ikke er mulig å lage helt feilfrie systemer.
     1. Konverter oppgave til graf
     2. Bruk verktøy fra grafteori til å få resultater
     3. Tolk resultatene fra grafteorien i den originale settingen
+       
     Virkelige systemer av ulik natur kan ha samme representasjon
 - Grunnleggenede egenskaper
   - Grafdiameter: "Lengste korteste vei i en graf"
@@ -946,7 +947,7 @@ Risikohåndtering brukes fordi det ikke er mulig å lage helt feilfrie systemer.
             - Bruker bare kunnskap om de mest lokale
             - Noder som forbinder subgrafer anerkjennes ikke som viktige
     - **Degree centrality**
-        - Tegn de korteste banene for alle nodeparene: Hvor mange av disse går gjennom $`v_i`$
+        - Tegn de korteste banene for alle nodeparene: Hvor mange av disse går gjennom $`v_i`$?
         - $`\sum_{s < t \& (s, t ≠ i)}{\frac{n_{s,t}^{i}}{n_{s,t}}}`$
             - $`n_{s,t}^{i}`$ er antall korteste veier mellom $`v_s`$ og $`v_t`$ som går gjennom $`v_i`$
             - $`n_{s,t}`$ er antall korteste veier mellom $`v_s`$ og $`v_t`$
