@@ -13,6 +13,7 @@
 10. [*MOTTILTAK - SIKKERHET*](#del10)
 11. [*MOTTILTAK - PÅLITELIGHET*](#del11)
 12. [*RISIKOHÅNDTERING*](#del12)
+13. [*GRAFTEORI*](#del13)
 
 
 
@@ -46,7 +47,7 @@ Menneskelige presentasjoner, tekniske systemer og organisatoriske forhold er all
 
 Storytime: 
 
-To personer snakker sammen via Skype (feks). ******************Informasjonen****************** som transmitteres her kan være taletrafikk, filer, video, chattemeldinger, etc… Informasjonen sendes gjennom et datanettverk i form av *data* (bits og bytes). Skype er en digital ****************tjeneste**************** som tilbyr transimisjon av slik informasjon.  I bunn er det et ************IKT system************ som muliggjør dette.
+To personer snakker sammen via Skype (f.eks.). **Informasjonen** som transmitteres her kan være taletrafikk, filer, video, chattemeldinger, etc… Informasjonen sendes gjennom et datanettverk i form av *data* (bits og bytes). Skype er en digital **tjeneste** som tilbyr transimisjon av slik informasjon.  I bunn er det et **IKT system** som muliggjør dette.
 
 Flere kombinasjoner:
 
@@ -54,7 +55,7 @@ Flere kombinasjoner:
 - H2M
 - M2M
 
-> ****************Hvilke kommunikasjonstjenester bruker du? Hvordan vil du klassifiserer/beskrive de ulike komboene?****************
+> **Hvilke kommunikasjonstjenester bruker du? Hvordan vil du klassifiserer/beskrive de ulike komboene?**
 
 
 <a name="del2"></a>
@@ -257,7 +258,7 @@ Det kan være lurt å tenke på:
 - motstandsdyktighet
 - etc
 
-> **⭐️de fem kjennetegnene på et sikkert og robust system**
+> **⭐️ - de fem kjennetegnene på et sikkert og robust system**
 
 **********************************What is security?********************************** 
 
@@ -535,7 +536,7 @@ Shipping blir mer og mer digitalisert
 **Hvordan ser skipets IT-system ut?**
 <div align='center'><img src="/img/shipIT.png" width=700px></div>
 
-**Angrep på OT-sys** har potensielt store konsekvenser, feks. kollisjon eller grunnstøting. Vanligvis meget komplisert.
+**Angrep på OT-sys** har potensielt store konsekvenser, f.eks. kollisjon eller grunnstøting. Vanligvis meget komplisert.
 
 **Angrep på viktige IT-systemer** kan hovedsaklig ha store konsekvenser for økonomi eller rykte. Det kan være både tilfeldige og planlagte angrep.  
 
@@ -812,3 +813,147 @@ Risikohåndtering brukes fordi det ikke er mulig å lage helt feilfrie systemer.
 - Risikonivå: størrelsen på en risiko som kommer fra dens sannsynlighet og konsekvens
 
 <div align='center'><img src="/img/risiko.png" width=700px></div>
+
+
+**Risikostyring** er alt en organisasjon gjør for å kontrollere og håndtere risiko
+- Iterativ prosess:
+    - Etablere risikostyringskontekts
+    - Kvantitativt eller kvalitativt vurdere relevant informasjonsrisiko.
+    - Behandle, beholde, unngå og/eller dele risikoen på en passende måte
+    - Holde interessesenter informert
+ 
+**Risikovurdering** har som formål å forstå og dokumetere risikobildet vedrørende en bestemt del eller apsektv av et system eller en organisasjon. 
+
+**Trinn 1: Kontekstetablering**
+
+- Planlegging av riskovurdering
+- Mål og målsettninger
+    - Hvorfor og for hvem gjøres denne risikovurderingen?
+-Omfang
+    - Hvilken del av systemet skal vurderes? _f.eks. protokollag, komponenter, brukere_
+    - Hva vil ikke bli vurdert?
+    - Hvilke mottiltak er iverksatt
+    - Hvilke aktører kan man stole på? _Hva slags brukere er involvert?_
+    - Hva er systemets overflate? _Den delen av systemet som er eksponert, og kan angripes_
+- Ressurs
+    - En ressurs er noe verdifullt som må beskyttes
+    - Informasjon, programvare, tjenester, maskinvare
+    - Vurdering av ressursen(e) og verdien
+        - Forskjellen mellom primære eiendeler og støttemidler
+            - Primær: Grunnleggende funksjoner. Kritisk viktig å beskytte
+            - Støtte: Andre verdier som må beskyttes for på beholde primære eiendeler beskyttet
+- Risikoskalaer
+    - Konsekvenser
+    - Sannsynligheter
+        - Kvantitativ: Probability
+        - Kvalitativ: Likelihood
+        - Eksempel: Del inn i intervaller på tid. f.eks. sjelden mindre enn én gang per tiår
+        - Kan legge til flere dimensjoner til sannsynlighetsskalaene
+- Kritierier for risikovurdering: Hva er akseptabel risiko?
+
+**Trinn 2: Risikoidentifikasjon**
+
+- Risikoidentifikasjon gjøres med hensyn til de identifiserte **eiendelene** ved å identifisere **trusler** og forså hvordan trusler kan føre til hvilke **uønskede hendelser** på grunn av hvilke **sårbarheter**
+    - Vil resultere i en liste over uønskede hendelser
+- Tre metoder:
+    - **Dokumentgjennomgang**
+        - Software, sonemodeller, sikkerhetspolicy, log files, config.files, etc.
+        - For å forstå hvilke sårbarheter som finnes
+    - **Testing**
+        - Ikke alltid mulig, men veldig nyttig
+    - **Intervjuer**
+        - Samle en gruppe mennesker fra ulike seksjoner og operasjoner og diskuter hva som kan gå galt
+
+
+**Trinn 3: Risikoanalyse**
+
+- Risikoanalye har som formål å estimere og bestemme nivået på de identifiserte risikoene
+    - Estimer sannsynligheten og konsekvensene for hver uønskede hendelse
+- Vurdere sannsynlighet
+    - Hvem vil gjøre dette? Hva er deres motivasjon? Hvordan vil de gå frem? Hvilke tilfeldige feil kan skje?
+- Sannsynlighet/konsekvens-matrise
+    - Viktig å se hvordan de ulike risikoene er i forhold til hverandre
+ 
+
+**Trinn 4: Risikoevaluering**
+
+- Sammenligning av risikoanalyseresyktater med risikokriterier for å bestemme hvilke risikoer som bør vurderes for behandling
+
+
+**Trinn 5: Risikobehandling**
+
+- Identifisere og velge midler for risikoredusering
+- For risikoer som er uakseptable, må man identifisere og velge mottiltak som reduserer risikoene
+- Prøv å redusere sannsynlighet og/eller konsekvens
+- Ta i bruk mottiltak (reduser risikoen)
+
+
+**Fire hovedstrategier for å håndtere risiko**
+1. Unngå
+    - Eliminere. Siste utvei
+2. Reduser
+3. Overfør
+    - Flytt risikoen til en tredjepart, f.eks. ved outsourcing. Forsikring
+5. Godta
+    - I noen tilfeller er det ikke verdt det å gjøre mottiltak. Aksepter risikoen.
+- Risikostyring er alltid en pågående prosess.
+- Risikovurdering er en begrenset prosess som organisasjoner gjennomfører på jevnlig basis
+- Utfordringer med risikostyring i komplekse systemer
+    - Moderne nettverkssystemer har mang ulike interessesenter
+    - Trusselkilder kan ligge hvor som helst i verden
+    - En betydelig del av truslene er forsettlige
+    - "Insidere" er offte de farligste truslene (og de vanskeligeste å forutsi og beskytte mot)
+    - "Dominoeffekten" er vanskelig å forutsi
+- Ulike typer usikkerhet
+    - Epestemisk usikkerhet: usikkerhet pga uvtenhet eller mange på bevis
+    - Aleatorisk usikkerhet: usikkerhet pga iboende tilfeldighet
+- Black swans
+    - Uønskede hendelser som er svært sjeldene og uventede, men som har svært betydelige konsekvenser
+    - Ikke vurdert i risikovurderinger
+- Kontrollsystemer
+
+
+
+<a name="del13"></a>
+# Grafteori
+- _Hvorfor grafteori?_
+    1. Konverter oppgave til graf
+    2. Bruk verktøy fra grafteori til å få resultater
+    3. Tolk resultatene fra grafteorien i den originale settingen
+    Virkelige systemer av ulik natur kan ha samme representasjon
+- Grunnleggenede egenskaper
+  - Grafdiameter: "Lengste korteste vei i en graf"
+  - Tilkobling: En graf som kobles tili hvis det er en bane mellom et hvilket som helst par av hjørner i grafen
+  - Kantgrad: Antall kanter per node
+  - Nodegradsfordeling: Fordeling som angir sannsynligheten for at en node har _k_ noder
+- Skaleringfrie nettverk
+    - Power law fordeling
+    - Mange noder med få forbindelser, få noder med mange forbindelser
+- Tilfeldige nettverk
+    - Barábasi-Albert algoritmen
+        - Skaper tilfeldig nettverk med power law fordeling
+        - Basert på preferential attachment
+            - Start med _m_ tilkoblede noder
+            - Legg til ny node of koble til _m_ eksisterende noder
+            - Tilkobling til nye noder med sannsynlighet $`p_i = \frac{k_i}{\sum_{j}{k_j}}`$
+            - "Depending on a fraaciton og total links connected to node I"
+    - Watts-Strogatz
+- Sentralitet
+    - Ulike sentralitetstiltak
+    - **Degree centrality**
+        - Nodegrad er sentralitetsindeks
+        - "Noden med flest naboer er mest sentral"
+        - Negativt:
+            - Bruker bare kunnskap om de mest lokale
+            - Noder som forbinder subgrafer anerkjennes ikke som viktige
+    - **Degree centrality**
+        - Tegn de korteste banene for alle nodeparene: Hvor mange av disse går gjennom $`v_i`$
+        - $`\sum_{s<t \text{&} (s, t ≠ i)}{\frac{n_{s,t}^{i}}{n_{s,t}}}`$
+
+
+
+
+
+
+
+
