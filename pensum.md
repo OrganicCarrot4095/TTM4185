@@ -939,7 +939,6 @@ Risikohåndtering brukes fordi det ikke er mulig å lage helt feilfrie systemer.
             - "Depending on a fraaciton og total links connected to node I"
     - Watts-Strogatz
 - Sentralitet
-    - Ulike sentralitetstiltak
     - **Degree centrality**
         - Nodegrad er sentralitetsindeks
         - "Noden med flest naboer er mest sentral"
@@ -953,8 +952,20 @@ Risikohåndtering brukes fordi det ikke er mulig å lage helt feilfrie systemer.
             - $`n_{s,t}`$ er antall korteste veier mellom $`v_s`$ og $`v_t`$
         - Merk: Et nodepar kan ha flere korteste veier
 
+    - **Closeness sentrality**
+        - Hvor nærme er alle de andre nodene?
+        - Basert på summen av korteste vei mellom $`v_i`$ og alle andre noder
+        - $`\frac{n-1}{\sum_{j ≠ i}{d_{i,j}}}`$
+            - $`d_{i,j}`$ korteste vei mellom $`v_i`$ og $`v_j`$
+            - _n_ antall noder i nettverket
+
+- Flytanalyse
+    - Analyser kapasiteten til kanter
+    - Hver kant har maksimal kapasitet
+    - Finn maksimal flyt mellom to noder
 
 
+**Robusthet**
 
 
 
