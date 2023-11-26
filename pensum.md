@@ -798,6 +798,17 @@ Spørsmål å vurdere når du velger strategi for håndtering av feil:
 > Når et system skal utvikles, spesifiseres dets ikke-funksjonelle krav til sikkerhet, personvern, pålitelighet, sikkerhet og ytelse (osv.), sammen med alle funksjonskrav. De ikke-funksjonelle kravene vil avhenge av bruken av systemet. De ikke-funksjonelle kravene ‐> mottiltak som skal iverksettes. Hvilke mottiltak som skal velges og «styrken» av disse tiltakene vil avhenge av konsekvensene av hendelser og feil som kan oppstå.
 
 
-
 <a name="del12"></a>
 # Risikohåndtering
+
+Risikohåndtering brukes fordi det ikke er mulig å lage helt feilfrie systemer. Da må prioritere hvilke tiltak man skal prioritere (huh?).
+
+**Basic-est of the basics:**
+- Risiko: sannsynligheten for en uønsket hendelse og dens konsekvenser for en ressurs
+- Uønsket hendelse: en hendelse som skader eller reduserer verdien av en eiendel
+- Ressurs: alt av verdi
+- Sannsynlighet: Sjansen for at noe skjer
+- Konsekvens: virkningen av en uønsket hendelse
+- Risikonivå: størrelsen på en risiko som kommer fra dens sannsynlighet og konsekvens
+
+<div align='center'><img src="/img/risiko.png" width=700px></div>
