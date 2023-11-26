@@ -24,7 +24,7 @@
 **Informasjon:**
 
 - Informasjon er en viktig del av et IKT system.
-- Data refererer vanligvis til rå data, eller ubehandlede data. Når dataen er analysert, regnes det som som informasjon. Informasjon er “kunnskap formidlet eller mottatt angående et bestemt forhold”, aka ✨Informasjon er data satt sammen✨.
+- Data refererer vanligvis til rådata, eller ubehandlede data. Når dataen er analysert, regnes det som som informasjon. Informasjon er “kunnskap formidlet eller mottatt angående et bestemt forhold”, aka ✨Informasjon er data satt sammen✨.
 
 *Vital information, personal information, strategic information, high-cost information.*
 
