@@ -479,7 +479,6 @@ Når en sårbarhet er kjent er den lett å finne, derfor er det viktig å oppdat
 Målrettet: 
 - Vanskelig
     - Dersom man har et oppdatert og robust system er det vanskelig å hacke seg inn fra internettet.
-    - 
 - Feilkonfigureringer eller svakheter
     - Avhengig av feilkonfig. eller svakheter i løsninger som er eksponert mot internet
     - Angrep mot påloggingssystemer er blandt det mest effektive
@@ -542,11 +541,12 @@ Shipping blir mer og mer digitalisert
 > Operasjonell teknologi (OT) refererer til maskinvare og programvare som brukes til å kontrollere og overvåke fysiske enheter, prosesser og hendelser i industrielle miljøer. OT er en sentral del av mange industrier, spesielt de som involverer produksjon, energiproduksjon, transport og andre former for kritisk infrastruktur.
 
 **Litt terminologi**
-• VHF: Very High Frequency – Radio-kanaler på 25 kHz hver som brukes til talekommunikasjon eller AIS. Kanalene er i området 156 til 162 MHz.
-• AIS: Automatic Identification System – Automatisk sending av navigasjonsinformasjon fra alle større skip (posisjon, kurs, fart ...).
-• ASM: Application Specific Messages – Mulighet til å sende generelle datameldinger i AIS-kanalene og to nye kanaler i VDES.
-• VDES: VHF Data Exchange System – Nytt system av kanaler for digital VHF.
-• VDE: VHF Data Exchange – Nye 100 kHz VHF kanaler (hver er fire gamle) for digitale meldinger.
+
+- VHF: Very High Frequency – Radio-kanaler på 25 kHz hver som brukes til talekommunikasjon eller AIS. Kanalene er i området 156 til 162 MHz.
+- AIS: Automatic Identification System – Automatisk sending av navigasjonsinformasjon fra alle større skip (posisjon, kurs, fart ...).
+- ASM: Application Specific Messages – Mulighet til å sende generelle datameldinger i AIS-kanalene og to nye kanaler i VDES.
+- VDES: VHF Data Exchange System – Nytt system av kanaler for digital VHF.
+- VDE: VHF Data Exchange – Nye 100 kHz VHF kanaler (hver er fire gamle) for digitale meldinger.
 
 **Skip kommuniserer med mange parter**
 <div align='center'><img src="/img/shipKom.png" width=700px></div>
@@ -594,6 +594,7 @@ Valg og implementering av sikkerhetskontroller for IKT-systemer og organisasjone
     - Noe du "gjør"
         - stemme, håndskrift, tasterytme
     - Hvor du er
+        - Lokasjon
 
 **Identifikasjon, autentisering og autorisasjon**
 
@@ -695,7 +696,7 @@ Nettverkssikkerhetsprotokoller
 - Fjerning av feil: mottiltak for å redusere antall og alvorlighetsgraden av feil
 - Feilvarsling: mottiltak for å estimere det nåværende antallet, den fremtidige forekomsten og den sannsynlige konsekvensen av feil
 
-
+<div align='center'><img src="/img/means.png" width=700px></div>
 
 Målet med både feilunngåelses- og feiltoleransestrategiene er å kunne levere den spesifiserte tjenesten, til tross for forekomst og aktivering av feil i systemet
 Feilunngåelse betyr å unngå at feil introduseres. Målet er å ha et feilfritt system. Ingen feil introduseres under utformingen av systemet.
@@ -703,4 +704,42 @@ Feiltoleranse betyr at feil kan oppstå og kan føre til feil, men feilene skal 
 
 > Merk at et feiltolerant system kan fungere på et redusert nivå når deler av systemet har sviktet. Det kan være en reduksjon i gjennomstrømming eller en økning i responstid, men tjenesten er fortsatt funksjonell.
 
-  
+**Hvordan oppnå:**
+- Unngåelse av feil:
+    - Ingen feil introdusert under design og implementering.
+    - Skjerming av systemet under drift.
+    - Bruk utprøvde design og komponenter.
+    - Kvalitetssikringsprosesser.
+- Feiltoleranse:
+    - Realisert av redundans i 
+        - Maskinvare
+        - Programvare
+        - Informasjon
+        - Tid
+- Fjerning av feil:
+    - Under utvikling:
+        - Verifikasjon
+        - Diagnostisering
+        - Rettelser
+    - Under drift:
+        - Korrigerende vedlikehold
+        - Forebyggende vedlikehold
+      
+      Enhver kombinasjon av disse kan brukes for å forbedre et systems feiltoleranse
+
+> Golden rule of redundancy: _No single point of failure._
+
+**¿Qué es redundans?**
+Redundans i en nettverksinfrastruktur kan implementeres som
+• Enhets("node")redundans
+• Bane("link")redundans
+• Protokollredundans: legge til ekstra programvare, informasjon og/eller tid
+
+div align='center'><img src="/img/redundans.png" width=700px></div>
+
+
+
+
+
+
+
