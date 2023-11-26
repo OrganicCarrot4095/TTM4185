@@ -767,10 +767,9 @@ Trippel modulær redundans (TMR) betyr at tre delsystemer beregner et resultat, 
 - Er feil egentlig uavhengige?
 - Er det virkelig ingen SPoF igjen?
 
-<div align='center'><img src="/img/ekom.png" width=700px></div>
-
 Ekom er et eksempel på nettverk med god redundans, kanskje bortsett fra i aksessnettverket.
 
+<div align='center'><img src="/img/ekom.png" width=700px></div>
 
 **Vær forberedt på feil og å måtte håndtere dem!**
 
@@ -916,7 +915,8 @@ Risikohåndtering brukes fordi det ikke er mulig å lage helt feilfrie systemer.
 
 <a name="del13"></a>
 # Grafteori
-- _Hvorfor grafteori?_
+
+_Hvorfor grafteori?_
     1. Konverter oppgave til graf
     2. Bruk verktøy fra grafteori til å få resultater
     3. Tolk resultatene fra grafteorien i den originale settingen
