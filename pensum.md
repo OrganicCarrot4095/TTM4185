@@ -966,7 +966,28 @@ Risikohåndtering brukes fordi det ikke er mulig å lage helt feilfrie systemer.
 
 
 **Robusthet**
+- Nettverksegenskaper
+    - Sentralitet
+    - Gjennomsnittlig nodegrad
+- Robusthet
+    - Studer virkningen av fjerning av node/kant
+    - Fjern noder/kanter gradvis og studer hvordan nettverk endres
+    - Vurder nettverk basert på tilkobling, sentralitet, maksimal flyt, osv.
+    - I nettverksvitenskap: Ofte brukes den største komponenten (dvs. antall noder i den største, overlevende nettverksdelen/-komponenten)
+- Skaleringfrie nettverk
+    - Nettverk reagerer svært forskjellig på tilfeldige feil og målrettede angrep
 
-
-
-
+**Oppsummering**
+- Dette tar kun hensyn til struktur
+    - Omlegging vurderes ikke
+    - Ekte systemer: Dekning er ikke perfekt
+    - Feil i fail-over-mekanismer
+    - Config.problemer i backup (omdiriger trafikk til failed komp.)
+    - Protokollproblemer og tidsavbrudd
+- Robusthetsanalyse/strukturanalyse gir best case
+- Grafteori kan brukes til struktuanalyse
+    - Hvilke noder er mer kritiske eller sentrale?
+    - Finn ut hvor du kan investere innsats eller penger
+- Metoder
+    - Nettverksegenskaper: nodegrad, sentralitet
+    - Robusthet (simulere svikten av noder/kanter)
