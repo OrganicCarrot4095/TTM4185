@@ -1,3 +1,5 @@
+(disclaimer: this is not very good)
+
 ### Where 2 start
 1. [*KOMPLEKSE IKT-SYSTEMER*](#del1)
 2. [*OPPSUMMERING AV NETTVERKSPROTOKOLLER OG OSI-MODELLENk*](#del2)
@@ -62,7 +64,7 @@ Flere kombinasjoner:
 
 Når du sender en melding blir den sendt via en forbindelse som er konstruert av faktiske fysiske komponenter (rutere, servere, fiberkabler, etc.) som er koblet sammen i et nettverk. Det er viktig å skjønne forskjellen mellom logiske og fysiske komponenter. Fysiske forbindelser (nettverk) gjør det mulig å opprette logiske forbindelser. 
 
-Når du sender eller mottar informasjon på internett, sendes det “pakker” mellom mange maskiner (rutere). Før informasjonen sendes, deles den opp i pakker. Hver pakke er merket med avsender og mottakeradresse (IP adresse). Hver gang eg pakke kommer til en ruter, ser ruteren hvilken adresse pakken skal sendes til. Deretter slår den opp i en routing tabell, og  finner beste vei frem til mottakeren. Ruteren vet ingenting om hvor din pakke ender opp, det eneste den vet er hva som er beste vei. 
+Når du sender eller mottar informasjon på internett, sendes det “pakker” mellom mange maskiner (rutere). Før informasjonen sendes, deles den opp i pakker. Hver pakke er merket med avsender og mottakeradresse (IP adresse). Hver gang en pakke kommer til en ruter, ser ruteren hvilken adresse pakken skal sendes til. Deretter slår den opp i en routing tabell, og  finner beste vei frem til mottakeren. Ruteren vet ingenting om hvor din pakke ender opp, det eneste den vet er hva som er beste vei. 
 
 De forskjellige pakkene trenger ikke å ta samme vei for å komme frem til målet. Det er ikke sikkert at pakkene kommer frem i samme rekkefølge som de ble sendt. Dersom en ruter “går ned”, kan man alltids sende pakkene en annen vei. Dette gjør at Internett er en svært robust kommunikasjonsinfrastruktur.
 
@@ -118,7 +120,7 @@ vil alltid være mange koblinger som aldri vil bli brukt, slik at det blir en de
 
 Stikkord; noder(peers) , Bacon-tall, sentralitet, grafer,
 
-`insert masse boring ass grafteori hereek`
+`insert masse boring ass grafteori here`
 
 
 
