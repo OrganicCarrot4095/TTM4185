@@ -8,6 +8,8 @@
 7. [*TRUSLER*](#del7)
 8. [*TRUSLER OG TRENDER (GF)*](#del8)
 9. [*MARITIM DIGITAL KOMMUNIKASJON*](#del9)
+10. [*MOTTILTAK - SIKKERHET*](#del10)
+11. [*MOTTILTAK - PÅLITELIGHET*](#del11)
 
 
 
@@ -547,3 +549,158 @@ Shipping blir mer og mer digitalisert
 • VDE: VHF Data Exchange – Nye 100 kHz VHF kanaler (hver er fire gamle) for digitale meldinger.
 
 **Skip kommuniserer med mange parter**
+<div align='center'><img src="/img/shipKom.png" width=700px></div>
+
+
+
+<a name="del10"></a>
+# Mottiltak - sikkerhet
+
+Sikkerhetskontroller er mottiltak som kan brukes for å unngå, oppdage, redusere eller minimere risikoen for eiendeler. Kontrollene vil redusere risikoen for skade eller tap ved å stoppe, avskrekke eller bremse et angrep på en ressurs.
+
+Sikkerhetskontroller kan klassifiseres etter når de brukes:
+- Forebyggende kontroller er ment å forhindre at en hendelse inntreffer
+- Detektivkontroller er ment å identifisere og klassifisere en hendelse når den forekommer
+- Korrigerende kontroller er ment å begrense skaden forårsaket av en hendelse.
+
+Sikkerhetskontroller kan også klassifiseres etter deres natur:
+- Administrative kontroller: hendelsesprosedyrer, sikkerhetsbevissthetsgjøringstrening, "fireøye-prinsippet", etc.
+- Tekniske kontroller: antivirusprogramvare, brannmurer, autentisering mekanismer osv.
+- Fysiske kontroller: låste dører, gjerder og overvåkingskameraer.
+  
+Sikkerhetskontroller kan tildeles en eller flere av de forskjellige kategoriene i begge klassifikasjoner. For eksempel er en fingeravtrykkskanner både en teknisk og fysisk kontroll siden den består av en maskinvareenhet (fysisk) som kjører autentiseringsprogramvare (teknisk). Det er en forebyggende kontroll siden den vil blokkere uautoriserte brukere fra systemet den beskytter. Sikkerhetsbevissthet er en forebyggende kontroll (kan også være detektiv, dersom de ansatte lærer å oppdage og rapportere sikkerhetshendelser). Sikkerhetsbevissthet er en administrativ kontroll.
+
+Valg og implementering av sikkerhetskontroller for IKT-systemer og organisasjoner er en viktig oppgave. Sikkerhetskontroller er sikkerhetstiltak/mottiltak som er utformet for å: 
+
+(i) beskytte konfidensialiteten, integriteten og tilgjengeligheten til eiendelene som behandles, lagres og/eller overføres av disse systemene/organisasjonene; 
+
+(ii) tilfredsstille et sett med definerte sikkerhetskrav.
+
+
+**Autentisering**
+
+...er en fundamental byggestein og primær del av forsvaret i et IKT system. Omhandler prosessen å verifisere identiteten til en person/et system.
+
+- Prosessen:
+    - Identifikasjon
+    - Verfikasjon av et sertifikat
+- Ulike måter:
+    - Noe du vet
+        - passord (mest vanlige, har mange svakheter - cuz pepl r stopid), personlig informasjon
+    - Noe du har
+        - nøkkel, bank ID, mobiltelefon
+    - Noe du "er"
+        - fingeravtrykk, iris scan, ansiktsgjenkjenning
+    - Noe du "gjør"
+        - stemme, håndskrift, tasterytme
+    - Hvor du er
+
+**Identifikasjon, autentisering og autorisasjon**
+
+> Hvem er du? Hvordan kan du bevise det? Hva kan du gjøre? --> Tilgangskontroll
+
+
+**Kryptering**
+
+- Symmetrisk (hemmelig key) kryptering
+    - Reversibel
+    - Samme nøkkel brukes for kryptering og dekryptering
+    - Delt hemmelig nøkkel
+- Asymmetrisk (offentlig key) kryptering
+    - Forskjellige nøkler for å kryptere og dekryptere
+    - Krypterer med mottakerens offentlige nøkkel, dektryptere med privat
+    - Tregt, krever mye ressurser
+    - Fungerer dårlig
+Løsningen er å kombinere begge metodene.
+
+- Nøkler
+    - Hold krypteringsnøkkelen hemmelig
+    - Beskytt krypteringsnøkkelen fra modifikasjoner og tap
+    - Vær klar over viktigheten av lengde (høhø)
+        - Målt i bits
+        - 2^n mulige kombinasjoner
+    - Lag en sterk kryptografisk nøkkel og del den ut sikkert
+
+ 
+**Digitale signaturer**
+
+- Plaintext + key -> signartur funksjon -> plaintext + signatur
+- Prinsipp av PGP (Pretty good privacy)
+- Signere mld ved å bruke en symmetrisk melding
+    - Dårlig skalering
+    - MAC: Message authentication code
+        - Mest vanlig: HMAC, hashed message authentication code
+- Signere mld ved å bruke asymmterisk melding
+    - Ulike keys brukes for å lage og verifisere digitale signaturer
+    - Krever mer prosesseringsressurser. Kan optimaliseres vha hashing
+
+
+**Digitale sertifikat**
+
+- Brukes for å verfisere signaturer, knytte en key til en enhet
+- Signatur hierarki
+    - Rotsertifiseringsautoritet -> Sertifikatsautoritet 1 & 2 -> Alice (1) og Bob (2)
+- Får opp varsel dersom det er et problem med sertifikatet til nettsiden du er inne på
+
+
+**Sikkerhetskontroller**
+Nettverkssikkerhetsprotokoller
+- IPsec
+    - Hvordan sikre IP-pakker. Gir CIA
+    - Nettverkslaget
+    - Gir konfidensialitet, integritetsbeskyttelse, dataopphavsautentisering (¿say what? direkte oversatt, not my fault) og replay protection av hver melding ved kryptere og signere alle meldingene.
+    - To hovedprotokoller:
+        - Autentiseringsheader (AH)
+        - Encapsulating Security Payload (ESP)
+        - ESP foretrekkes siden den tilbyr både autentfikasjon og konfidensialitet, AH har bare autentifikasjon.
+    - To moduser:
+        - Transport: Mellom endebrukere. Bare nyttelasten er kryptert
+            - Data -> TCP header -> IPsec header -> IP header
+        - Tunnel: Mellom inngangsporter. Både nyttelast og header er kryptert.
+    - Karakteristikk:
+        - Pålegger ikke PKI (Public Key Infrastructure)
+        - Applikasjonsuavhengig
+        - Gjennomsiktig for applikasjoner når den er integrert i kjernen
+        - De fleste VPN-er bruker IPsec
+- TLS/SSL
+    - Transportlaget, kjører bare på toppen av TCP
+    - Basert på SSLv3. Bruker PKI for å kunne tilby brukerautentisering i tillegg til symmetrisk nøkkel for konfidensialitetsproblem
+    - To metoder:
+        - Gjensidig autentifikasjon:
+            - Både client og server autentiserer seg når det etableres en sesjon
+            - Veldig dyrt
+        - Server-side autentifikasjon:
+            - Bare serveren gir et sertifikat når det etableres en sesjon
+- SSH - Secure Shell
+    - Applikasjonslaget. Connection oriented -> Bruker bare TCP
+    - Primært brukt på shell-baserte løsninger
+    - Bruker offentlig nøkkel kryptografi for å bevise autensiteten til shell-brukeren
+    - Vedlikeholder en rekke klarerte hosts
+ 
+
+<a name="del11"></a>
+# Mottiltak - Pålitelighet
+**Tre fundamentale pålitelighetsegenskaper**
+- Tilgjengelighet: evnen å tilby en gitt tjeneste på/innen et gitt punkt/tidsintervall
+- Pålitelighet: evnen å tilby uforstyrrede tjenster (kontinuitet)
+- Vedlikeholdbarhet: evnen til å bli gjenopprettet til en tilstand der det kan levere den nødvendige tjenesten
+
+> Mottiltak i denne forstand blir da hva vi kan gjøre for å holde et system oppe slik at det kan fortsette å levere de tjenestene den tilbyr.
+
+
+<div align='center'><img src="/img/dependability.png" width=700px></div>
+
+- Unngå feil: mottiltak for å forhindre at feil oppstår
+- Feiltoleranse: mottiltak for å unngå tjenestefeil i tilfelle feil
+- Fjerning av feil: mottiltak for å redusere antall og alvorlighetsgraden av feil
+- Feilvarsling: mottiltak for å estimere det nåværende antallet, den fremtidige forekomsten og den sannsynlige konsekvensen av feil
+
+
+
+Målet med både feilunngåelses- og feiltoleransestrategiene er å kunne levere den spesifiserte tjenesten, til tross for forekomst og aktivering av feil i systemet
+Feilunngåelse betyr å unngå at feil introduseres. Målet er å ha et feilfritt system. Ingen feil introduseres under utformingen av systemet.
+Feiltoleranse betyr at feil kan oppstå og kan føre til feil, men feilene skal ikke resultere i feil som kan observeres av brukeren. Målet er å levere tjenesten til tross for at det oppstår feil i systemet.
+
+> Merk at et feiltolerant system kan fungere på et redusert nivå når deler av systemet har sviktet. Det kan være en reduksjon i gjennomstrømming eller en økning i responstid, men tjenesten er fortsatt funksjonell.
+
+  
