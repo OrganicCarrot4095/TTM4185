@@ -10,6 +10,7 @@
 9. [*MARITIM DIGITAL KOMMUNIKASJON*](#del9)
 10. [*MOTTILTAK - SIKKERHET*](#del10)
 11. [*MOTTILTAK - PÅLITELIGHET*](#del11)
+12. [*RISIKOHÅNDTERING*](#del12)
 
 
 
@@ -691,10 +692,10 @@ Nettverkssikkerhetsprotokoller
 
 <div align='center'><img src="/img/dependability.png" width=700px></div>
 
-- Unngå feil: mottiltak for å forhindre at feil oppstår
-- Feiltoleranse: mottiltak for å unngå tjenestefeil i tilfelle feil
-- Fjerning av feil: mottiltak for å redusere antall og alvorlighetsgraden av feil
-- Feilvarsling: mottiltak for å estimere det nåværende antallet, den fremtidige forekomsten og den sannsynlige konsekvensen av feil
+- Unngå feil: forhindre at feil oppstår
+- Feiltoleranse: fikse feilen før systemet går ned
+- Fjerning av feil: redusere antall og alvorlighetsgraden av feil som kan oppstå
+- Feilvarsling: analysere systemet og finne ut hvor det er mest hensiktsmessig med mottiltak
 
 <div align='center'><img src="/img/means.png" width=700px></div>
 
@@ -727,19 +728,74 @@ Feiltoleranse betyr at feil kan oppstå og kan føre til feil, men feilene skal 
       
       Enhver kombinasjon av disse kan brukes for å forbedre et systems feiltoleranse
 
-> Golden rule of redundancy: _No single point of failure._
+> Den gyldne regelen (for redundans): _No single point of failure._
 
 **¿Qué es redundans?**
+
 Redundans i en nettverksinfrastruktur kan implementeres som
 • Enhets("node")redundans
 • Bane("link")redundans
 • Protokollredundans: legge til ekstra programvare, informasjon og/eller tid
 
-div align='center'><img src="/img/redundans.png" width=700px></div>
+<div align='center'><img src="/img/redundans.png" width=700px></div>
+
+
+Redundans er tillegg av ressurser i form av maskinvare, programvare, informasjon eller tid utover det som er nødvendig for normal levering av systemtjenester.
+
+To forskjellige metoder for å implementere redundans:
+- Modulær redundans
+    - To eller flere moduler som fungerer samtidig - alltid en kopi kjører og holdes oppdatert med all interaksjon med systemet
+        - Hardware
+        - Boeing 777: 3x3 redundans
+- Standby-redundans (også kjent som "backup"-redundans)
+    - Én aktiv komponent, én eller flere passive komponenter klare til å overta. Bare ett eksemplar får sanntidsoppdateringer. De andre oppdateres ofte.
+        - Routing system
+        - Servere
+     
+Trippel modulær redundans (TMR) betyr at tre delsystemer beregner et resultat, og det resultatet blir behandlet av en flertallsvelger for å produsere en enkelt utgang. Hvis et av de tre undersystemene svikter, kan de to andre undersystemene korrigere og maskere feilen. TMR er en veldig vanlig tilnærming for å gjøre maskinvare overflødig, og den er også ofte implementert i programvare.
+
+> Hvorfor trenger vi tre undersystemer? Hvorfor er det ikke nok med to?
+
+
+**Ulemper med redundans**
+- Dyrt
+- Økt kompleksitet -> Flere PoF og økt risiko for menneskelige feil
+- Hvor skal man stoppe?
+- Er feil egentlig uavhengige?
+- Er det virkelig ingen SPoF igjen?
+
+<div align='center'><img src="/img/ekom.png" width=700px></div>
+
+Ekom er et eksempel på nettverk med god redundans, kanskje bortsett fra i aksessnettverket.
+
+
+**Vær forberedt på feil og å måtte håndtere dem!**
+
+
+For å minimere den totale systemkostnaden må du vurdere
+- utviklingskostnad
+- produksjonskostnad
+- utstyrskostnad
+- driftskostnad
+- vedlikeholdskostnader
+
+Noen ganger kan det være et alternativ å ikke forebygge feil, men heller håndtere de så fort de har oppstått.
+
+**Fire faser for å komme seg etter en feil**
+- Deteksjon: trenger å finne ut at systemet ikke fungerer (hvordan vil du (eller systemet) bli varslet?)
+- Lokalisering: hvor er det?
+- Isolasjon: ikke alltid, men noen ganger må du isolere feilen for å forhindre mer skader
+- Reparer – gjenopprett: bring systemet til å fungere igjen
+
+Merk at ikke alle disse fasene er aktuelt i alle feilsituasjoner.
+
+Spørsmål å vurdere når du velger strategi for håndtering av feil:
+- Hva koster nedetiden?
+- Hva er RTO (Recovery Time Objective) og RPO (Recovery Point Objective)?
+
+> Når et system skal utvikles, spesifiseres dets ikke-funksjonelle krav til sikkerhet, personvern, pålitelighet, sikkerhet og ytelse (osv.), sammen med alle funksjonskrav. De ikke-funksjonelle kravene vil avhenge av bruken av systemet. De ikke-funksjonelle kravene ‐> mottiltak som skal iverksettes. Hvilke mottiltak som skal velges og «styrken» av disse tiltakene vil avhenge av konsekvensene av hendelser og feil som kan oppstå.
 
 
 
-
-
-
-
+<a name="del12"></a>
+# Risikohåndtering
