@@ -918,14 +918,14 @@ Risikohåndtering brukes fordi det ikke er mulig å lage helt feilfrie systemer.
 
 _Hvorfor grafteori?_
 
-    1. Konverter oppgave til graf
+1. Konverter oppgave til graf
     
-    2. Bruk verktøy fra grafteori til å få resultater
+2. Bruk verktøy fra grafteori til å få resultater
     
-    3. Tolk resultatene fra grafteorien i den originale settingen
+3. Tolk resultatene fra grafteorien i den originale settingen
 
-       
-    Virkelige systemer av ulik natur kan ha samme representasjon
+
+Virkelige systemer av ulik natur kan ha samme representasjon
 - Grunnleggenede egenskaper
   - Grafdiameter: "Lengste korteste vei i en graf"
   - Tilkobling: En graf som kobles tili hvis det er en bane mellom et hvilket som helst par av hjørner i grafen
