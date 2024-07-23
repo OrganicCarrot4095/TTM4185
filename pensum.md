@@ -33,7 +33,7 @@
 
 > *Hvilken informasjon er viktig for deg?* 
 
-**Tenester:** 
+**Tjenester:** 
 
 I dag bruker alle organisasjoner digitale tenester. Dette er en viktig del av et digitalt system. Tjenester benytter, produserer, leverer, etc… 🔥`INFORMASJON`🔥 Eksempler på tjenester; Sosiale medier, skylagring, dokumentredigering, videokonferanser, betalingstjenester, strømmetjenester, søkemotorer.
 
